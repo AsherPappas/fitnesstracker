@@ -9,8 +9,8 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.use(express.static("public"));
-
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnesstracker", {
+// connection to mongoose/mongoDB
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://asher:pappas98@Cluster0.n9z04.mongodb.net/sample_mflix?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
