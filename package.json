@@ -1,19 +1,19 @@
 {
-  "name": "fitnesstracker",
+  "name": "mongoose_skeleton",
   "version": "1.0.0",
-  "description": "As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AsherPappas/fitnesstracker.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeders/seed.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AsherPappas/fitnesstracker/issues"
-  },
-  "homepage": "https://github.com/AsherPappas/fitnesstracker#readme"
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.3.16",
+    "morgan": "^1.9.1"
+  }
 }
